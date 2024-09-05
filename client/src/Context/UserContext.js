@@ -12,7 +12,6 @@ export const UserProvider = ({children}) => {
       const fetchData = async () => {
         try {
           const response = await axios.get(`${server_api}/user/me`, { withCredentials: true });
-          console.log("response",response.data.user)
           setUser(response.data.user)
         } catch (error) {
           console.error('Error fetching data:', error);

@@ -16,7 +16,6 @@ const EnrollClass = () => {
   const fetchClasses = async () => {
     try {
       const response = await axios.get(`${server_api}/user/myClass`,{ withCredentials: true });
-      console.log(response)
       setClasses(response.data.classes);
       setTotalPages(response.data.totalPages);
     } catch (error) {
