@@ -26,7 +26,7 @@ const Home = () => {
     <div className="flex flex-col md:flex-row h-screen">
       {panel ? (
         <>
-          {/* Panel for normal users */}
+     
           <div className="w-full md:w-1/4 dark:bg-gray-900 text-white p-6 transition-all duration-300">
             <Panel selected={selected} setSelected={setSelected} />
           </div>
@@ -38,7 +38,7 @@ const Home = () => {
         </>
       ) : (
         <>
-          {/* Admin Panel */}
+  
           <div className="w-full md:w-1/4 dark:bg-gray-900 text-white p-6 transition-all duration-300">
             <AdminPanel selected={selected} setSelected={setSelected} />
           </div>
