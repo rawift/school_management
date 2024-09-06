@@ -30,14 +30,14 @@ const EnrollClass = () => {
       <h2 className="text-2xl font-bold mb-4">Classes</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {classes.map((classItem) => (
-          <div key={classItem._id} className="bg-white p-4 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-2">{classItem.name}</h3>
-            <p><strong>Year:</strong> {classItem.year}</p>
-            <p><strong>Number of Students:</strong> {classItem.students.length}</p>
-            <p><strong>Student Limit:</strong> {classItem.studentLimit}</p>
+          <div key={classItem?._id} className="bg-white p-4 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-2">{classItem?.name}</h3>
+            <p><strong>Year:</strong> {classItem?.year}</p>
+            <p><strong>Number of Students:</strong> {classItem?.students?.length}</p>
+            <p><strong>Student Limit:</strong> {classItem?.studentLimit}</p>
             <div className="mt-4 flex justify-between">
               <button
-                onClick={() => navigate(`/class/${classItem._id}`)}
+                onClick={() => navigate(`/class/${classItem?._id}`)}
                 className="bg-indigo-500 text-white py-1 px-4 rounded hover:bg-indigo-600"
               >
                 View Details
