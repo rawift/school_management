@@ -48,7 +48,6 @@ function Profile() {
 
       if (response.status === 200) {
         alert("Successful!")
-        console.log('Form submitted successfully:', response.data);
       
       } else {
         console.error('Form submission failed:', response.statusText);

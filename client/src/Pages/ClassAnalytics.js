@@ -33,7 +33,6 @@ function ClassAnalytics() {
     const fetchTeachers = async () => {
       try {
         const response = await axios.get(`${server_api}/user/getTeacher`, { withCredentials: true });
-        console.log('Teachers Data:', response.data);
         setTeachers(response.data);
       } catch (error) {
         console.error('Error fetching teachers:', error);
