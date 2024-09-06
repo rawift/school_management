@@ -2,7 +2,7 @@ import React from 'react';
 
 function AdminPanel({ selected, setSelected }) {
   return (
-    <div className="w-1/4 dark:bg-gray-900 text-white p-6">
+    <div className="w-full  dark:bg-gray-900 text-white p-2 sm:p-6">
       <ul className="flex flex-col">
         <li
           className={`cursor-pointer py-2 ${
@@ -37,7 +37,6 @@ function AdminPanel({ selected, setSelected }) {
         >
           Classes Analytics
         </li>
-        
       </ul>
     </div>
   );
